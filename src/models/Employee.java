@@ -1,5 +1,7 @@
 package models;
 
+import java.sql.Timestamp;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -48,10 +50,10 @@ public class Employee {
     private Integer admin_flag;
 
     @Column(name = "created_at", nullable = false)
-    private Integer created_at;
+    private Timestamp created_at;
 
     @Column(name = "updated_at", nullable = false)
-    private Integer updated_at;
+    private Timestamp updated_at;
 
     @Column(name = "delete_flag", nullable = false)
     private Integer delete_flag;
@@ -96,19 +98,19 @@ public class Employee {
         this.admin_flag = admin_flag;
     }
 
-    public Integer getCreated_at() {
+    public Timestamp getCreated_at() {
         return created_at;
     }
 
-    public void setCreated_at(Integer created_at) {
+    public void setCreated_at(Timestamp created_at) {
         this.created_at = created_at;
     }
 
-    public Integer getUpdated_at() {
+    public Timestamp getUpdated_at() {
         return updated_at;
     }
 
-    public void setUpdated_at(Integer updated_at) {
+    public void setUpdated_at(Timestamp updated_at) {
         this.updated_at = updated_at;
     }
 
