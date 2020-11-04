@@ -54,7 +54,7 @@ public class ReportsUpdateSrevlet extends HttpServlet {
 
                 request.setAttribute("_token", request.getSession().getId());
                 request.setAttribute("report", r);
-                request.setAttribute("errrors", errors);
+                request.setAttribute("errors", errors);
 
                 RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/views/reports/edit.jsp");
                 rd.forward(request, response);

@@ -57,7 +57,7 @@ public class ReportsIndexServlet extends HttpServlet {
         request.setAttribute("page", page);
         if(request.getSession().getAttribute("flush") != null) {
             request.setAttribute("flush", request.getSession().getAttribute("flush"));
-            request.getSession().getAttribute("flush");
+            request.getSession().removeAttribute("flush");
         }
 
         RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/views/reports/index.jsp");
